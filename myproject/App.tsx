@@ -1,20 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import WelcomeScreen from './src/screens/welcomeScreens';
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Olá Bundo! </Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+   <>
+   
+   <NavigationContainer>
+    <WelcomeScreen></WelcomeScreen>
+    </NavigationContainer>
+   
+   
+   </>
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
